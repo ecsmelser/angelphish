@@ -1,0 +1,55 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Angelphish</title>
+    <style>
+        body, html {
+            width: 700px; /* Set the width of the popup */
+            height: 600px; /* Set the height of the popup */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        #image-container {
+            width: 500px; /* Adjusted to fit the image size */
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .button-container {
+            width: 100%; /* Take the full width */
+            display: flex;
+            justify-content: space-between;
+            padding: 0 10px;
+        }
+        .button-container button {
+            margin: 0; /* Remove margin for button alignment */
+        }
+        .description {
+            text-align: center;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div id="image-container">
+        <h1>This is AngelPhish</h1>
+        <img src="icon48.png" alt="Angelphish Image" style="width: 500px; height: 300px;">
+    </div>
+    <div class="button-container">
+        <div>
+            <button id="checkButton">Check Website</button>
+            <p id="statusText" class="description">Click to check if this website is safe.</p>
+        </div>
+        <div>
+            <button id="historyButton">Check History</button>
+            <p id="historyDescription" class="description">This button checks the last 10 websites you have visited.</p>
+        </div>
+    </div>
+    <div id="phishing-url"></div>
+
+    <script src="background.js"></script>
+</body>
+</html>
