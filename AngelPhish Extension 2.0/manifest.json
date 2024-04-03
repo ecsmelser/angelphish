@@ -5,7 +5,8 @@
     "description": "Predicts the likelihood of a website attempting phishing, offering users valuable insights into website safety beyond traditional services.",
     "permissions": ["webRequest", "webRequestBlocking", "<all_urls>"],
     "background": {
-      "scripts": ["background.js"]
+      "service_worker": "service-worker.js",
+      "type": "module"
     },
     "content_scripts": [
       {
