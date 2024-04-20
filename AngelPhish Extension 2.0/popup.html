@@ -1,20 +1,22 @@
 <html lang="en">
 <head>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- PyScript CSS -->
     <link rel="stylesheet" href="https://pyscript.net/releases/2024.1.1/core.css">
     <!-- CSS for examples -->
     <link rel="stylesheet" href="./assets/css/examples.css" />
-
+    
     <!-- This script tag bootstraps PyScript -->
     <script type="module" src="https://pyscript.net/releases/2024.1.1/core.js"></script>
-
-    <!-- Custom CSS -->
-    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
-    <link rel="stylesheet" href="./assets/css/tictactoe.css" />
     
+    
+
+        
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
     <title>Angelphish</title>
     <style>
         body, html {
@@ -61,8 +63,37 @@
             <p id="historyDescription" class="description">This button checks the last 10 websites you have visited.</p>
         </div>
     </div>
-    <div id="phishing-url"></div>
+    <div id="typedUrl_div"></div>
 
-    <script src="background.js"></script>
+    <section class="pyscript">
+        <div>
+            <h1>TEST</h1>
+        </div>
+        <div>
+            <input id="new-task-content" type="text" />
+                        <button id="test-btn" type="submit" py-click="add_task">
+                            Add task
+                        </button>
+                    </div>
+
+                    <div id="list-tasks-container"></div>
+
+                    <template id="task-template">
+                        <section class="task py-li-element">
+                            <label class="flex items-center p-2">
+                                <input style="vertical-align: middle;" type="checkbox" />
+                                <p style="display: inline;"></p>
+                            </label>
+                        </section>
+                    </template>
+                </section>
+        
+        
+            
+    
+
+
+
+
 </body>
-</html>
+</html>          
