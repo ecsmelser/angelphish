@@ -34,6 +34,7 @@ def check_url_legitimacy(url):
     else:
         return "Phishy"
 
+
 # 3 url contains "@"
 def check_url_for_at_symbol(url):
     if '@' in url:
@@ -345,3 +346,5 @@ def check_domain_age(domain):
     except whois.parser.PywhoisError as e:
         print("Error:", e)
         return "Phishy"
+
+GAME = MAIN() 
