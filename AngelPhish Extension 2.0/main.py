@@ -1,5 +1,7 @@
 import socket
 import urllib.parse
+from datetime import datetime as dt
+from pyscript import document
 from urllib.parse import urlparse
 import selenium
 import requests
